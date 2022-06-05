@@ -11,5 +11,23 @@ class PizzeriaListSerializer(serializers.ModelSerializer):
             'pizzeria_name',
             'city',
             'zip_code',
-            'absolute_url'
+            # 'absolute_url'
+        ]
+
+class PizzeriaDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        Model = Pizzeria
+        fields = [
+            'id',
+            'pizzeria_name',
+            'street',
+            'city',
+            'state',
+            'zip_code',
+            'website',
+            'phone_number',
+            'description',
+            'logo_image',
+            'email',
+            'active'
         ]
