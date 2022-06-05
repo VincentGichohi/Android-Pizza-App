@@ -14,9 +14,10 @@ class PizzeriaListSerializer(serializers.ModelSerializer):
             # 'absolute_url'
         ]
 
+
 class PizzeriaDetailSerializer(serializers.ModelSerializer):
     class Meta:
-        Model = Pizzeria
+        model = Pizzeria
         fields = [
             'id',
             'pizzeria_name',
