@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import PizzaDetail from './pizzeriaupdate';
 
-class PizzaForm extends React.Component {
+class PizzaForm extends Component {
    constructor(props) {
        super(props);
        this.state = {
