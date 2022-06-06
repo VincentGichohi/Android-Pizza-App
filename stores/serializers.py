@@ -1,6 +1,6 @@
 from .models import Pizzeria
 from rest_framework import serializers
-from rest_framework import reverse
+from rest_framework.reverse import reverse
 
 
 class PizzeriaListSerializer(serializers.ModelSerializer):
@@ -14,7 +14,7 @@ class PizzeriaListSerializer(serializers.ModelSerializer):
             'pizzeria_name',
             'city',
             'zip_code',
-            # 'absolute_url'
+            'absolute_url'
         ]
 
     def get_absolute_url(self, obj):
